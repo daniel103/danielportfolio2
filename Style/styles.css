@@ -34,7 +34,7 @@ section {
     margin-left: auto !important;
     margin-right: auto !important;
     min-height: 100vh;
-    padding: 6.4rem 180px 0 180px;
+    padding: 6.5rem 320px 0 320px;
     position: relative;
 }
 
@@ -265,7 +265,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    background-image: radial-gradient(at center center, #151462 10%, #08082E 100%) !important;
 }
 
 .about-img img {
@@ -298,7 +298,7 @@ span {
 }
 
 .elementor {
-    padding: 0px 0px 0px 70px;
+    padding: 0px 150px 0px 150px;
     box-sizing: border-box;
 }
 
@@ -311,26 +311,46 @@ span {
 
 .services h2 {
     margin-bottom: 5rem;
+    font-size: 48px;
+    position: relative;
+    margin: 0 auto 80px;
+    color: var(--main-color);
+    width: 35vw;
 }
 
 .services-container {
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 3.2rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.services-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 30rem;
+    height: 40rem;
+    text-align: center;
+    background-color: var(--snd-bg-color);
 }
 
 .services-container .services-box {
-    flex: 1 1 30rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 3.5rem;
-    background: var(--snd-bg-color);
-    padding: 3.8rem 4.1rem 4.2rem;
+    gap: 1rem;
+
+    padding: 5rem 5rem 5rem 5rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--bg-color);
+    border: .2rem solid var(--snd-bg-color);
     transition: .5s ease;
 }
 
@@ -340,18 +360,33 @@ span {
 }
 
 .services-box i {
-    font-size: 6.5rem;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 22px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 5rem;
     color: var(--main-color);
 }
 
 .services-box h3 {
+    line-height: 1.8;
+    text-transform: capitalize;
+    margin-bottom: 20px;
     font-size: 2.6rem;
-    margin-top: 11px;
+    color: var(--text-color);
+    font-weight: 800;
+
 }
 
 .services-box p {
+    color: #dde0ea;
     font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    margin: 1rem 0 2rem;
+
 }
 
 
@@ -369,6 +404,7 @@ span {
     align-items: center;
     gap: 3.5rem;
     padding: auto;
+    
 }
 
 .portfolio-container .portfolio-box {
@@ -392,6 +428,8 @@ span {
     width: 100%;
     transition: .5s ease;
     opacity: 0.8;
+    background-position: center;
+    object-fit: fill;
 }
 
 .portfolio-box:hover img {
@@ -749,6 +787,8 @@ span {
 
     .about {
         flex-direction: column-reverse;
+        padding: 60px 0px 60px 0px;
+        background-image: radial-gradient(at center center, #151462 10%, #08082E 100%) !important;
     }
 
     .about-img img{
@@ -757,7 +797,12 @@ span {
     }
 
     .services h2 {
-        margin-bottom: 3rem;
+        font-size: 28px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto 80px;
     }
 
     .portfolio h2 {
@@ -827,7 +872,7 @@ span {
             font-weight: 500;
         }
         section {
-            min-height: 55vh;
+            min-height: 46vh;
             padding: 5.5rem 2%;
         }
         #portfolio-p {
@@ -854,14 +899,44 @@ span {
             font-weight: 500;
             text-align: center;
             margin: 2.5rem;
+            margin-block-start: 0;
+            margin-block-end: .9rem;
         }
         .heading {
             text-align: center;
             font-size: 38px;
             font-weight: bold;
         }
+        .elementor {
+            text-align: center;
+    color: var(--text-color);
+    font-family: "Assistant", assistant;
+    font-size: 16px;
+    padding: 30px 15px 30px 15px;
+    font-weight: 500;
+        }
         .services-container {
             padding: 10px;
+                 margin-right: 0; 
+    margin-left: 0;
+    margin-top: -65px;
+        }
+        .services-box {
+            position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 41rem;
+    height: 40rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 6rem;
+        background-color: var(--snd-bg-color);
+   
         }
         .services-box h3 {
             font-size: 28px;
@@ -878,7 +953,7 @@ span {
         padding: 0px 0px 0px 0px;
     }
     .portfolio-container .portfolio-box {
-        height: 265px;
+        height: 214px;
     }
 
     .portfolio-container {
@@ -890,6 +965,10 @@ span {
     }
     .portfolio-layer p {
         font-weight: 500;
+        font-size: 12px;
+    }
+    .portfolio-layer h4 {
+        font-size: 2.5rem;
     }
     #contact-h21 {
         font-size: 29px;
